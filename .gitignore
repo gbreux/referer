@@ -1,0 +1,32 @@
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+node_modules
+
+# production
+build
+dist
+.next
+.serverless
+
+# misc
+.DS_Store
+out
+.tmp
+.sass-cache
+bower_components
+*.iml
+gen
+.idea
+
+.git
+
+cypress/videos
+cypress/screenshots
+
+package-lock.json
+
+# Local Netlify folder
+.netlify
+
+public/temp
