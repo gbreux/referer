@@ -1,12 +1,9 @@
 chrome.webRequest.onBeforeSendHeaders.addListener(
-	function (details) {
-		var gotRef = false;
-		var gotOrigin = false;
-		for (var n in details.requestHeaders) {
-			gotRef = /referer/.test(details.requestHeaders[n].name.toLowerCase());
-			gotOrigin = /origin/.test(details.requestHeaders[n].name.toLowerCase());
-			if (gotOrigin || gotRef) {
-				details.requestHeaders[n].value =
+	(details) => {
+		for (let header in details.requestHeaders) {
+			const name = details.requestHeaders[header].name.toLowerCase();
+			if (/referer|origin/.test(name)) {
+				details.requestHeaders[header].value =
 					"https://" + parseDomain(new URL(details.url).hostname);
 			}
 		}
