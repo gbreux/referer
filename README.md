@@ -20,7 +20,7 @@ origin: https://google.com
 referer: https://google.com
 ```
 
-This example is also an example to warn you that this will break (on purpose) the google SSO.
+This example is also an example to warn you that this will break (on purpose) the google SSO because they check the `origin` to allow or not a request attempt. (So be aware that this may break other services that use the same header).
 
 ## How to install
 
