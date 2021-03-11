@@ -1,6 +1,6 @@
 # referer
 
-Chrome plugin to rverride the referrer and the origin request header on each request. If any, they will be changed by the hostname of the requested url.
+Chrome plugin to override the referrer and the origin request header on each request. If any, they will be changed by the hostname of the requested url.
 
 ## How to install
 
