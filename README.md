@@ -2,7 +2,7 @@
 
 Chrome plugin to override the referrer and the origin request header on each request. If any, they will be changed by the hostname of the requested url.
 
-**Example:**
+## Example
 
 Request url from https://medium.com: `https://accounts.google.com/gsi/status`
 
