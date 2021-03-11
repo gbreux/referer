@@ -10,7 +10,7 @@ Request url from https://medium.com: `https://accounts.google.com/gsi/status`
 
 ```
 origin: https://medium.com
-referer: https://yahoo.fr.com
+referer: https://yahoo.com
 ```
 
 `Request Headers` changed:
