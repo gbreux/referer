@@ -23,8 +23,8 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
 );
 
 function parseDomain(url) {
-	var elts = url.split(".");
-	var offset = 2;
+	const elts = url.split(".");
+	let offset = 2;
 	if (elts[elts.length - 2] == "co") {
 		offset = 3;
 	}
